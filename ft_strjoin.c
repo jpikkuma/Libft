@@ -6,7 +6,7 @@
 /*   By: jpikkuma <jpikkuma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 18:37:03 by jpikkuma          #+#    #+#             */
-/*   Updated: 2021/12/23 00:25:07 by jpikkuma         ###   ########.fr       */
+/*   Updated: 2021/12/23 02:05:43 by jpikkuma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	s1len;
 	size_t	s2len;
 
-	s1len = ft_strlen(s1);
-	s2len = ft_strlen(s2);
 	if (!s1 || !s2)
 		return (NULL);
+	s1len = ft_strlen(s1);
+	s2len = ft_strlen(s2);
 	fresh = ft_strnew(s1len + s2len);
 	ret = fresh;
 	if (!fresh)
